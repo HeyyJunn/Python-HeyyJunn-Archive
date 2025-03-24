@@ -13,3 +13,23 @@ def input_and_output():
 
 input_and_output()
 input_and_output()
+
+for i in range(3):
+    print(i)
+
+a = int(1)
+b = a + 1
+b = a.__add__(1)
+
+
+# 사용자 정의 자료형 (user defined data type)
+class MyInt:
+    def __init__(self, value):
+        self.value = value
+
+    def print(self):
+        print(self.value)
+
+
+a = MyInt(123)
+print(a)
